@@ -1,8 +1,8 @@
 import React from "react";
 
-function sum(a: number, b: number) {
-    alert(a + b);
-}
+// function sum(a: number, b: number) {
+//     alert(a + b);
+// }
 
 // sum(12,14);
 
@@ -31,13 +31,13 @@ export function Todolist(props: PropsType) { //props = { title: "What to learn" 
             <ul>
                 {/* мы берем в props. конкретно в tasks берем [0] элемент и у этого елемента берем свойсвтво .isDone */}
                 {/* В span; мы берем в props. конкретно в tasks берем [0] элемент и у этого елемента берем свойсвтво .title */}
-                {
-                    props.tasks.map((t) => {
-                        return <li><input type="checkbox" checked={t.isDone}/>
-                            <span>{t.title}</span>
-                        </li>
-                    })
-                }
+                {/*{*/}
+                {/*    props.tasks.map((t) => {*/}
+                {/*        return <li><input type="checkbox" checked={t.isDone}/>*/}
+                {/*            <span>{t.title}</span>*/}
+                {/*        </li>*/}
+                {/*    })*/}
+                {/*}*/}
                 <li><input type="checkbox" checked={props.tasks[0].isDone}/><span>{props.tasks[0].title}</span></li>
                 <li><input type="checkbox" checked={props.tasks[1].isDone}/><span>{props.tasks[1].title}</span></li>
                 <li><input type="checkbox" checked={props.tasks[2].isDone}/><span>{props.tasks[2].title}</span></li>
